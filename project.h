@@ -4,8 +4,8 @@
 
 using namespace std;
 
-# idndef project_H
-# define project_H
+# idndef Student_H
+# define Student_H
 
 class Student
 {
