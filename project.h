@@ -9,13 +9,13 @@ using namespace std;
 
 class Student
 {
-  string name;
+	string name;
 	string matric;
 	
 public:
 	Student();
 	void readDetail();
-	void display();
+	friend void display();
 }；
 
 # endif
