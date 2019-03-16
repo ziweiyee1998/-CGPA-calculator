@@ -1,4 +1,4 @@
-# include "project.h"
+# include "Student.h"
 
 Student::Student ()
 {
@@ -17,6 +17,8 @@ void Student::readDetail()
 
 void Student::display()
 {
-	cout<<"Name: "<<name<<endl;
-	cout<<"Matric: "<<matric; 
+	ofstream outFile ("CGPA.txt");
+	
+	outFile	<<"Student's name: /t"<<name<<endl;
+		<<"Matric Number: /t"<<matric<<endl;
 }
