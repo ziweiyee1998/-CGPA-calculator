@@ -4,7 +4,7 @@
 
 using namespace std;
 
-# idndef Student_H
+# ifndef Student_H
 # define Student_H
 
 class Student
@@ -15,7 +15,7 @@ class Student
 public:
 	Student();
 	void readDetail();
-	friend void display();
-}；
+	friend void display(string name, string matric);
+};
 
 # endif
