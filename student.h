@@ -15,6 +15,10 @@ class Student
 public:
 	Student();
 	void readDetail();
+	void setName(string n);
+	string getName();
+	void setMatric(string m);
+	string getMatric();
 	friend void display(string name, string matric);
 };
 
