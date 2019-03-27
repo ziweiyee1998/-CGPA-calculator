@@ -15,10 +15,22 @@ void Student::readDetail()
 	getline(cin,matric);
 }
 
-void display(string name, string matric)
+void Student::setName(string n)
 {
-	ofstream outFile ("CGPA.txt");
-	
-	outFile	<<"Student's name: /t"<<name<<endl
-		<<"Matric Number: /t"<<matric<<endl;
+	name = n;
+}
+
+string Student::getName()
+{
+	return name;
+}
+
+void Student::setMatric(string m)
+{
+	matric = m;
+}
+
+string Student::getMatric()
+{
+	return matric;
 }
