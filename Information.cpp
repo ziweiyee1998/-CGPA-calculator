@@ -39,6 +39,3 @@ void Information::printInfo()
 	cout<< "Course Code: "  << this->courseCode <<endl;
 	cout<< "Credit Hours: " << this->credit <<endl;
 }
-
-
-
