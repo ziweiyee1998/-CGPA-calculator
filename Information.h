@@ -10,16 +10,16 @@ using namespace std;
 class Information
 {
 	private:
-		string courseCode;
+		string subjectCode;
 		string scredit;
 		int credit;
 		
 	public:
 		Information();
 		void readInfo();
-		string getCourseCode();
-		void setCourseCode(string courseCode);
-		void extractCredit(string courseCode);
+		string getSubjectCode();
+		void setSubjectCode(string subjectCode);
+		void extractCredit(string subjectCode);
 		void stringToInt();
 		void printInfo();
 };
