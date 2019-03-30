@@ -2,31 +2,31 @@
 
 Information::Information()
 {
-	courseCode = '/0';
+	subjectCode = '/0';
 	scredit = '/0';
 	credit = 0;
 }
 
 void Information::readInfo()
 {
-	cout<<"Please Enter Course Code: ";
-	getline(cin, courseCode);
+	cout<<"Please Enter Subject Code: ";
+	getline(cin, subjectCode);
 		
 }
 
-string Information::getCourseCode() 
+string Information::getSubjectCode() 
 {
-	return courseCode;
+	return subjectCode;
 }
 
-void Information::setCourseCode(string courseCode)
+void Information::setSubjectCode(string subjectCode)
 {
-	this->courseCode = courseCode;
+	this->subjectCode = subjectCode;
 }
 
-void Information::extractCredit(string courseCode)
+void Information::extractCredit(string subjectCode)
 {
-	scredit = courseCode.substr(7, 1);
+	scredit = subjectCode.substr(7, 1);
 }
 
 void Information::stringToInt()
@@ -36,6 +36,6 @@ void Information::stringToInt()
 
 void Information::printInfo()
 {
-	cout<< "Course Code: "  << this->courseCode <<endl;
+	cout<< "Subject Code: " << this->subjectCode <<endl;
 	cout<< "Credit Hours: " << this->credit <<endl;
 }
