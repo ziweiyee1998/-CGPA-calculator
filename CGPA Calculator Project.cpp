@@ -185,6 +185,7 @@ public:
 			
 			else
 				continue;
+				
 		}
 		
 		inp.close();
@@ -281,14 +282,6 @@ public:
 	
 	string getMatric() { return matric; }
 	
-	/*friend ostream& operator << (ostream& os, Student& s)
-	{
-		for (int i = 0; i < s.student_count; i++)
-			os << "[" << i + 1 << "] " << s._studentlist[i].getName() << " " << s._studentlist[i].getMatric() << endl;
-			
-		return os;
-	}*/
-	
 	string returnNM (int a)
 	{
 		return _studentlist[a].getName() + " " + _studentlist[a].getMatric();
@@ -342,8 +335,6 @@ public:
 				if (_subjectlist[j].getSubInfo() == s->getSubInfo())
 					return false;
 			}
-			
-			cout << "c" << endl;
 
 			if (_subjectlist == 0)
 			{
